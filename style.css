@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Comic Neue', cursive;
+    background: linear-gradient(90deg, pink,purple,blue);
+}
+
+h1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #00f3ff;
+    animation: animate 6s linear infinite;
+    text-shadow: 0 0 30px #00f3ff;
+}
+
+ul{
+    list-style: none;
+}
+
+.buttons{
+    display: flex;
+    gap: 100px;
+}
+
+input{
+    height: 30px;
+    outline: 0;
+}
+
+input:focus{
+    border:2px solid rgba(135,206,235,0.4);
+}
+
+button{
+    background-color:purple ;
+    color: white;
+    outline: 0;
+    cursor: pointer;
+    border: 0px;
+    -webkit-box-shadow: -1px 0px 13px 0px rgba(0,0,0,1);
+    -moz-box-shadow: -1px 0px 13px 0px rgba(0,0,0,1);
+    box-shadow: -1px 0px 13px 0px rgba(0,0,0,1);
+    padding: 10px;
+    margin-bottom: 50px;
+
+}
+
+button:hover{
+    color: purple;
+    background-color: white;
+}
+.badges{
+    display: flex;
+}
+
+.badge{
+    background-color: lightgreen;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.title{
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;  
+}
+
+#random{
+    border-radius: 5px;
+}
+
+.transcript{
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+
+@keyframes animate{
+    0%{
+        filter:hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
